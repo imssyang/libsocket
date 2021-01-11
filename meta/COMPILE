@@ -1,0 +1,10 @@
+
+vi CMakeLists.txt
+  IF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+      #SET(CMAKE_INSTALL_PREFIX "/usr")
+      SET(CMAKE_INSTALL_PREFIX "/opt/libsocket")
+  ENDIF() 
+
+cmake CMakeLists.txt
+make
+make install
